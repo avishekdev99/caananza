@@ -9,6 +9,13 @@
     background-color: rgba(255, 255, 255, 0);
     transition: all 0.3s ease;
 }
+.site-header.fixed {
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid #d9e1e6;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .logo-img {
     background-image: url(../images/logo.png);
     background-position: center;
@@ -18,10 +25,16 @@
     width: 150px;
     filter: brightness(0) invert(1);
 }
+.fixed .logo-img {
+    filter: brightness(0) invert(0);
+}
 .main-nav ul li a{
     font-size: 16px;
     font-weight: 600;
     color: #fff;
+}
+.fixed .main-nav ul li a{
+    color: #333;
 }
 .main-nav ul li a:hover{
     opacity: 0.6;
@@ -153,4 +166,260 @@
     background-color: #fff;
 }
 
+.choose-icon {
+    background-image: url(../images/choose-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 65px;
+    width: 65px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.choose-wrap {
+    padding: 0 25px 25px 25px;
+    border-width: 2px;
+    text-align: center;
+    border-style: solid;
+    border-right: 0;
+    border-image: linear-gradient(to bottom, #ededed, rgba(0, 0, 0, 0)) 1 60%;
+    height: 100%;
+}
+.col-md-4:first-child .choose-wrap {
+    border-left: none;
+}
+.why-choose-sec .row {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.choose-text p {
+    margin-bottom: 0;
+}
 /* why choose us section css end */
+
+/* explore section css start  */
+.explore-sec{
+    position: relative;
+}
+.explore-text {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.explore-text h3, .explore-text p{
+    color: #fff;
+}
+.disclaimer-wrap {
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+.disclaimer-wrap p a {
+    color: #000;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.disclaimer-wrap p {
+    margin-bottom: 0;
+}
+/* explore section css end */
+
+
+/* footer section css start */
+.site-footer{
+    background-color: #333;
+}
+.footer-heading h4 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer-heading p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.footer-social-links ul li a {
+    font-size: 20px;
+    color: #fff;
+}
+.footer-social-links ul li a:hover{
+    color: #ebd7b2;
+}
+.footer-social-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-links ul li a {
+    color: #fff;
+    font-size: 15px;
+    display: inline-block;
+}
+    .footer-links ul li {
+        padding: 5px 0;
+    }
+    .footer-links ul li:first-child{
+        padding-top: 0;
+    }
+    .newsletter-group input {
+        border: 0;
+        height: 45px;
+        border-radius: 3px;
+        padding-left: 15px;
+        background-color: rgba(255, 255, 255, 0.06);
+        color: #fff;
+        width: 100%;
+        font-size: 15px;
+    }
+    .newsletter-group input:focus {
+        border: 0;
+        box-shadow: none;
+    }
+    .newsletter-group input:focus-visible {
+        outline: none;
+    }
+    .newsletter-group {
+        position: relative;
+        margin: 25px 0;
+    }
+    .newsletter-group button{
+        position: absolute;
+        right: 15px;
+        color: #fff;
+        font-size: 22px;
+        top: 1px;
+        border: 0;
+        opacity: 0.6;
+        height: 45px;
+        background-color: transparent;
+        transition: all 0.3s ease-in-out;
+        outline: none;
+    }
+
+    .footer-top{
+        background-image: url(../images/footer-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    padding: 100px 0 50px;
+
+    }
+    .footer-top::before{
+        content: '';
+        background: transparent;
+        background: linear-gradient(to bottom, #515151e8, #24262d);
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+    }
+    .footer-top .container{
+        position: relative;
+        z-index: 1;
+    }
+    .footer-bottom {
+        padding: 25px 0;
+        background-color: #1f2127;
+    }
+    .copyright p {
+        font-size: 15px;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ssl-logo{
+        background-image: url(../images/ssl-logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 45px;
+        width: 120px;
+    }
+/* footer section css end */
+
+
+
+/* sub pages css start */
+.sub-banner{
+    background-image: url(../images/party-hotel-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+.sub-banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.7;
+}
+.hotel-abt .about-text {
+    padding: 70px 0;
+}
+.choose-text h5 {
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.3;
+    font-size: 20px;
+}
+.hotel-wrap {
+    display: block;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+}
+.hotel-img{
+    background-image: url(../images/blog-6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+.hotel-text .small-heading {
+    /* margin-bottom: 10px; */
+    font-size: 25px;
+}
+.loca-text .tile-disc {
+    margin-bottom: 0;
+}
+.loca-text {
+    margin-bottom: 10px;
+}
+.hotel-text {
+    padding: 30px 20px 70px;
+}
+.hotel-main{
+    background: #fff;
+}
+.hotel-main .col-lg-4 {
+    margin: 15px 0;
+}
+.hotel-text .cta-btn.btn-outer {
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+}
+/* sub pages css end */
+
